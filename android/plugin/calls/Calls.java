@@ -13,7 +13,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 **/
-    
+
 
 package android.plugin.calls;
 import android.content.Context;
@@ -100,6 +100,7 @@ public class Calls extends CordovaPlugin {
                 try {
                     call.put("phoneNumber", phNumber);
                     call.put("date", prettyDate);
+                    call.put("duration", callDuration);
                     call.put("type", dir);
                     call.put("caller", caller);
                     calls.put(call);
